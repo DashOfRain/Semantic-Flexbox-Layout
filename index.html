@@ -1,0 +1,193 @@
+<!DOCTYPE html> <html><head>
+        <title>Semantic Flexbox Layout</title>
+    <style>html, body {
+	margin: 0;
+    padding: 0;
+}
+
+html {
+	font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+	margin-top: 125px;
+}
+
+header {
+	background-color: #276FBF;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.site-branding {
+	display: flex;
+    justify-content: flex-start;
+}
+
+.branding {
+	margin-right: 10px;
+}
+
+.tagline {
+	position: relative;
+    top: 10px;
+}
+
+.main-nav ul {
+	list-style: none;
+    position: relative;
+    top: 5px;
+}
+
+.main-nav ul li {
+	display: inline-block;
+    padding: 5px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.active {
+	border-bottom: 2px solid #F6F4F3;
+    font-weight: bold;
+}
+
+.wrapper {
+	display: flex;
+    justify-content: center;
+}
+
+.white {
+	color: #F6F4F3;
+}
+
+.grey {
+	color: #bbb;
+}
+
+.sidebar {
+	border:1px solid #ddd;
+    padding: 25px 15px;
+    border-radius: 5px;
+    margin: 0px 25px;
+    box-shadow: 1px 1px 10px #eee;
+    text-align: center;
+    width: 25vw;
+    max-width: 300px;
+    height: 50vh;
+}
+
+.profile-img {
+	border-radius: 100%;
+}</style></head>
+    <body>
+        <header>
+            <div class="site-branding">
+            	<h1 class="white branding">Facefriend Book</h1>
+            	<h3 class="grey tagline">Where friendly faces greet you.</h3>
+            </div>
+            <nav class="main-nav">
+            	<ul>
+                    <li><a href="#" class="white active">Home</a></li>
+                    <li><a href="#" class="white">Profile</a></li>
+                    <li><a href="#" class="white">Stream</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="wrapper">
+            <aside class="sidebar">
+                <img src="https://via.placeholder.com/150" alt="profile image" title="profile image" class="profile-img">
+                <h2>Some User</h2>
+                <p>Some details about the user here. This is the bio...</p>
+            </aside>
+            <main>
+                <h2>Stream</h2>
+                <article>
+                    <div class="poster">
+                        <img src="https://via.placeholder.com/75" alt="friend's profile picture">
+                        <h3>Dope Friend</h3>
+                    </div>
+                    <div class="post-content">
+                        <img src="https://via.placeholder.com/400x300" alt="Post image">
+                        <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus malesuada magna ac lobortis. Fusce commodo, elit a feugiat suscipit, ipsum odio egestas felis, in commodo nibh enim a justo.</p>
+                    </div>
+                    <nav class="post-navigation">
+                        <ul>
+                            <li><a href="#">Like</a></li>
+                            <li><a href="#">Comment</a></li>
+                            <li><a href="#">Share</a></li>
+                        </ul>
+                    </nav>
+                </article>
+                <article>
+                    <div class="poster">
+                        <img src="https://via.placeholder.com/75" alt="friend's profile picture">
+                        <h3>Dope Friend</h3>
+                    </div>
+                    <div class="post-content">
+                        <img src="https://via.placeholder.com/400x300" alt="Post image">
+                        <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus malesuada magna ac lobortis. Fusce commodo, elit a feugiat suscipit, ipsum odio egestas felis, in commodo nibh enim a justo.</p>
+                    </div>
+                    <nav class="post-navigation">
+                        <ul>
+                            <li><a href="#">Like</a></li>
+                            <li><a href="#">Comment</a></li>
+                            <li><a href="#">Share</a></li>
+                        </ul>
+                    </nav>
+                </article>
+                <article>
+                    <div class="poster">
+                        <img src="https://via.placeholder.com/75" alt="friend's profile picture">
+                        <h3>Dope Friend</h3>
+                    </div>
+                    <div class="post-content">
+                        <img src="https://via.placeholder.com/400x300" alt="Post image">
+                        <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus malesuada magna ac lobortis. Fusce commodo, elit a feugiat suscipit, ipsum odio egestas felis, in commodo nibh enim a justo.</p>
+                    </div>
+                    <nav class="post-navigation">
+                        <ul>
+                            <li><a href="#">Like</a></li>
+                            <li><a href="#">Comment</a></li>
+                            <li><a href="#">Share</a></li>
+                        </ul>
+                    </nav>
+                </article>
+                <article>
+                    <div class="poster">
+                        <img src="https://via.placeholder.com/75" alt="friend's profile picture">
+                        <h3>Dope Friend</h3>
+                    </div>
+                    <div class="post-content">
+                        <img src="https://via.placeholder.com/400x300" alt="Post image">
+                        <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus malesuada magna ac lobortis. Fusce commodo, elit a feugiat suscipit, ipsum odio egestas felis, in commodo nibh enim a justo.</p>
+                    </div>
+                    <nav class="post-navigation">
+                        <ul>
+                            <li><a href="#">Like</a></li>
+                            <li><a href="#">Comment</a></li>
+                            <li><a href="#">Share</a></li>
+                        </ul>
+                    </nav>
+                </article>
+            </main>
+        </section>
+        <footer>Copyright ©: 2022 by Eric Wilson</footer>
+    
+
+</body></html>
